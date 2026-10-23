@@ -1,7 +1,7 @@
 {
   "name": "steelshell",
   "displayName": "Steelshell",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Work on your saved SSH servers through Steelshell: run commands, read logs, edit files and fix bugs without ever handing the agent a password or key.",
   "author": {
     "name": "Steelshell",

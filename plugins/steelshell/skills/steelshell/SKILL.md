@@ -60,8 +60,7 @@ Work on one server at a time unless the user asked for more. Don't open new port
 | --- | --- |
 | `unknown_host` | The server is not shared with agents. Call `list_hosts`. The user can share it with `steelshell agent allow <host>`. |
 | `read_only` | The server is shared read-only. Tell the user what you would change, or ask them to run `steelshell agent allow <host>` for full access. |
-| `host_key_unverified` | Steelshell has not seen this server's key yet. Ask the user to run `steelshell trust <host>` or to connect once with `steelshell`. |
-| `host_key_changed` | Stop. The server's key differs from the saved one, which can mean an attack. Tell the user and do nothing else on that server. |
+| `host_key_changed` | Stop. The server's key differs from the one saved on first connection, which can mean an attack. Tell the user and do nothing else on that server. If they confirm it was reinstalled, they run `steelshell trust '<name>'`. |
 | `auth_failed` | The saved password or key was refused. The user fixes it in the Steelshell app. |
 | `unreachable` | Network, DNS, firewall or a server that is down. Report it, and don't loop. |
 | `not_signed_in` | Steelshell on this machine is signed out. Ask the user to run `steelshell login`. |
