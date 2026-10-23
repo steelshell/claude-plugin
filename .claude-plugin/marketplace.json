@@ -1,0 +1,16 @@
+{
+  "name": "steelshell",
+  "owner": {
+    "name": "Steelshell",
+    "url": "https://steelshell.dev"
+  },
+  "description": "Steelshell for AI agents: let Claude Code work on the servers you share, without seeing passwords or keys.",
+  "plugins": [
+    {
+      "name": "steelshell",
+      "source": "./plugins/steelshell",
+      "description": "The steelshell MCP server and a skill that teaches the agent to work on servers carefully.",
+      "category": "devops"
+    }
+  ]
+}

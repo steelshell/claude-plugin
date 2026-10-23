@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "steelshell": {
+      "command": "steelshell",
+      "args": ["mcp"]
+    }
+  }
+}
